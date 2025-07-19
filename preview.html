@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Project Ananta - Live Preview</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            font-family: sans-serif;
+        }
+        .preview__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #262626;
+            color: white;
+            padding: 10px 20px;
+            height: 60px;
+            box-sizing: border-box;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
+        .preview__logo img {
+            height: 40px;
+        }
+        .preview__actions a {
+            background-color: #82b440;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+         .preview__actions a:hover {
+            background-color: #72a330;
+         }
+        .preview__frame {
+            width: 100%;
+            height: calc(100% - 60px);
+            border: none;
+            margin-top: 60px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="preview__header">
+      <div class="preview__logo">
+        <a href="index.html" target="preview-frame">
+          <img src="images/Global One consulting final logo.svg" alt="Global One Logo" />
+        </a>
+      </div>
+    
+      <div class="preview__actions">
+        <a href="Why Choose Project Ananta (5).pdf" target="_blank">Download Plan</a>
+      </div>
+    </div>
+
+    <iframe class="preview__frame" src="index.html" name="preview-frame" frameborder="0" noresize="noresize" allow="geolocation 'self'; autoplay 'self'">
+    </iframe>
+
+  </body>
+</html>
